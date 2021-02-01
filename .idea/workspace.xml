@@ -7,23 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de41d9d2-8d87-4c2f-be9c-cd329c837232" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ab50d33b-7af3-4928-9e48-c0f05fad4e7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ab50d33b-7af3-4928-9e48-c0f05fad4e7f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zhurenko/ua/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zhurenko/ua/hebirnate/HibernateBookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/hebirnate/HibernateBookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Owner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/addBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/addBook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/updateBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/updateBook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/model/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/addBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/addBook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/hebirnate/HibernateBookDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/hebirnate/HibernateBookDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/updateBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/updateBook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zhurenko/ua/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zhurenko/ua/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zhurenko/ua/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zhurenko/ua/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zhurenko/ua/hebirnate/HibernateBookDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zhurenko/ua/hebirnate/HibernateBookDAO.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -95,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/addBook.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="49" column="24" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="49" selection-end-column="24" />
+              <caret line="49" column="24" selection-start-line="38" selection-start-column="12" selection-end-line="49" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -112,8 +100,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/updateBook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="49" column="57" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+            <state relative-caret-position="96">
+              <caret line="51" column="84" selection-start-line="51" selection-start-column="84" selection-end-line="51" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zhurenko/ua/controller/BookController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="83" column="74" selection-start-line="83" selection-start-column="74" selection-end-line="83" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/searchBook.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -153,12 +162,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/searchBook.html" />
         <option value="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Buyer.java" />
         <option value="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Owner.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/addBook.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/zhurenko/ua/controller/BookController.java" />
         <option value="$PROJECT_DIR$/src/main/java/zhurenko/ua/hebirnate/HibernateBookDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Book.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/updateBook.html" />
       </list>
     </option>
@@ -299,8 +308,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612208766351" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612214382832" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -484,7 +493,7 @@
       <workItem from="1612035611393" duration="39457000" />
       <workItem from="1612106448281" duration="21747000" />
       <workItem from="1612186374612" duration="1234000" />
-      <workItem from="1612198485142" duration="9763000" />
+      <workItem from="1612198485142" duration="12901000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1612121423075</created>
@@ -514,11 +523,18 @@
       <option name="project" value="LOCAL" />
       <updated>1612186835019</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add Owner and ManyToMany relation 2">
+      <created>1612208864577</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1612208864577</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95917000" />
+    <option name="totallyTimeSpent" value="99055000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,7 +549,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30181542" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30181542" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -545,7 +561,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32843137" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49924356" visible="true" weight="0.44281045" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49924356" visible="true" weight="0.44281045" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39869282" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -579,7 +595,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="add Buyer and ManyToOne relation" />
     <MESSAGE value="add Owner and ManyToMany relation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Owner and ManyToMany relation" />
+    <MESSAGE value="add Owner and ManyToMany relation 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Owner and ManyToMany relation 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.27.Final/hibernate-core-5.4.27.Final.jar!/org/hibernate/Session.class">
@@ -657,13 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/searchBook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/book.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
@@ -698,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://ab50d33b-7af3-4928-9e48-c0f05fad4e7f/schema/books/table/owner_books">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://ab50d33b-7af3-4928-9e48-c0f05fad4e7f/schema/books/table/books">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -729,16 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zhurenko/ua/controller/BookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="83" column="74" selection-start-line="83" selection-start-column="74" selection-end-line="83" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -754,7 +747,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/addBook.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="49" column="24" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="49" selection-end-column="24" />
+          <caret line="49" column="24" selection-start-line="38" selection-start-column="12" selection-end-line="49" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -775,10 +768,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/searchBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ab50d33b-7af3-4928-9e48-c0f05fad4e7f/schema/books/table/owner_books">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zhurenko/ua/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="83" column="74" selection-start-line="83" selection-start-column="74" selection-end-line="83" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/updateBook.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="49" column="57" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+        <state relative-caret-position="96">
+          <caret line="51" column="84" selection-start-line="51" selection-start-column="84" selection-end-line="51" selection-end-column="84" />
         </state>
       </provider>
     </entry>

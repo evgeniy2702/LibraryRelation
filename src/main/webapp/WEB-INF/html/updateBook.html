@@ -14,6 +14,7 @@
 <h2>Update this book :</h2>
     <table>
         <tr>
+            <th>Id of Book</th>
             <th>Name of Book</th>
             <th>Author</th>
             <th>Year</th>
@@ -21,6 +22,7 @@
             <th>Number of pages</th>
         </tr>
         <tr>
+            <td th:text="*{id}"></td>
             <td><input type="text"  th:field="*{name}"/></td>
             <td><input type="text" th:field="*{author}"/></td>
             <td><input type="number" th:field="*{year}"/></td>
@@ -45,9 +47,9 @@
                         <td>Id Owner</td>
                         <td>Name Owner</td>
                     </tr>
-                    <tr th:each="owner: ${book.owners}">
-                        <td><input type="text" th:field="*{id}"/></td>
-                        <td><input type="text" th:value="*{nameOwner}"/></td>
+                    <tr th:each="owner, item: ${book.owners}">
+                        <td><input type="text" th:field="${book.owners[${item.index}].id}"/></td>
+                        <td><input type="text" th:field="${book.owners[${item.index}].nameOwner}"/></td>
                     </tr>
                 </table>
             </td>
