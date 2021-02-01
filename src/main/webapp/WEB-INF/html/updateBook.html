@@ -20,6 +20,9 @@
             <th>Stile</th>
             <th>Number of pages</th>
             <th>Description of book</th>
+            <th>Current Buyer</th>
+            <th>Update Buyer ID</th>
+            <th>Update Buyer name</th>
         </tr>
         <tr>
             <td><input type="text"  th:field="*{name}"/></td>
@@ -28,6 +31,9 @@
             <td><input type="text" th:field="*{stileOfBook}"/></td>
             <td><input type="number" th:field="*{numPages}"/></td>
             <td><input type="text" th:field="*{description}"/></td>
+            <td><input type="text" th:field="*{buyer.nameBuyer}" disabled/></td>
+            <td><input type="text" th:field="*{buyer.id}"/></td>
+            <td><input type="text" th:field="*{buyer.nameBuyer}"/></td>
         </tr>
     </table>
 

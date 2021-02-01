@@ -29,6 +29,7 @@
         <th>Stile</th>
         <th>Number of pages</th>
         <th>Description of book</th>
+        <th>Buyer</th>
         <th>Delete</th>
     </tr>
     <tr th:each="book: ${books}">
@@ -39,6 +40,7 @@
         <td th:text="${book.stileOfBook}">Stile of Book</td>
         <td th:text="${book.numPages}">Number of Pages</td>
         <td th:text="${book.description}">Description</td>
+        <td th:text="${book.buyer.getNameBuyer()}">Buyer</td>
         <td><a th:href="@{ /book/delete/{id}( id= ${ book.getId() } ) }">Delete</a></td>
     </tr>
 

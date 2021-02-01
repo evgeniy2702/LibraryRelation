@@ -15,6 +15,7 @@
         <th>Stile</th>
         <th>Number of pages</th>
         <th>Description of book</th>
+        <th>Buyer</th>
         <th>Delete</th>
     </tr>
     <tr>
@@ -25,6 +26,7 @@
         <td th:text="${book.stileOfBook}"></td>
         <td th:text="${book.numPages}"></td>
         <td th:text="${book.description}"></td>
+        <td th:text="${book.buyer.getNameBuyer()}"></td>
         <td><a th:href="@{/book/delete/{id}( id= ${ book.getId() } ) }">Delete</a></td>
     </tr>
 </table>

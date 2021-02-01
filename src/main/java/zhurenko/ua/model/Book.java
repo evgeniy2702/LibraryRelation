@@ -20,6 +20,15 @@ public class Book {
     private int numPages;
     private String description;
 
+    @ManyToOne(targetEntity = Buyer.class,
+                fetch = FetchType.LAZY,
+                cascade = CascadeType.ALL)
+    @JoinColumn(name = "buyer_id",
+                referencedColumnName = "buyer_id")
+    private Buyer buyer;
+
+
+
     public Long getId() {
         return id;
     }
@@ -76,6 +85,14 @@ public class Book {
         this.description = description;
     }
 
+    public Buyer getBuyer() {
+        return buyer;
+    }
+
+    public void setBuyer(Buyer buyer) {
+        this.buyer = buyer;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
@@ -86,6 +103,8 @@ public class Book {
                 ", stileOfBook='" + stileOfBook + '\'' +
                 ", numPages=" + numPages +
                 ", description='" + description + '\'' +
+                ", buyerId=" + buyer.getId() + '\'' +
+                ", buyerName=" + buyer.getNameBuyer() +
                 '}';
     }
 }
