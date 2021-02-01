@@ -20,6 +20,9 @@
             <th>Stile</th>
             <th>Number of pages</th>
             <th>Description of book</th>
+            <th>Buyer ID</th>
+            <th>Buyer name</th>
+            <th>Owners</th>
         </tr>
         <tr>
             <td><input type="text"  th:field="*{name}"/></td>
@@ -28,9 +31,17 @@
             <td><input type="text" th:field="*{stileOfBook}"/></td>
             <td><input type="number" th:field="*{numPages}"/></td>
             <td><input type="text" th:field="*{description}"/></td>
+
+            <td><input type="text" th:field="*{buyer.id}"/></td>
+            <td><input type="text" th:field="*{buyer.nameBuyer}"/></td>
+
+            <td>
+                <input type="text" th:field="*{owners.add(owner.id}"/>
+                <input type="text" th:field="*{owners.add(owner.nameOwner)}"/>
+            </td>
+
         </tr>
     </table>
-
     <p><input type="submit" value="Submit"/>
 
 </form>

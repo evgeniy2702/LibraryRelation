@@ -1,6 +1,10 @@
 package zhurenko.ua.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "books")
@@ -28,6 +32,11 @@ public class Book {
     private Buyer buyer;
 
 
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "owner_books",
+            joinColumns =  @JoinColumn(name = "book_id" , referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "owner_id", referencedColumnName = "id_owner"))
+    private Set<Owner> owners ;
 
     public Long getId() {
         return id;
@@ -93,6 +102,29 @@ public class Book {
         this.buyer = buyer;
     }
 
+    public Set<Owner> getOwners() {
+        return owners;
+    }
+
+    public void setOwners(Set<Owner> owners) {
+        this.owners = owners;
+    }
+
+    public String ownerToString(Set<Owner> owners){
+        String string = "";
+        for (Owner owner : owners) {
+            string = string.concat(owner.toString());
+        }
+        return string;
+    }
+
+    public void addSetOwners(Long id, String name){
+        Owner owner = new Owner();
+        owner.setId(id);
+        owner.setNameOwner(name);
+        this.owners.add(owner);
+    }
+
     @Override
     public String toString() {
         return "Book{" +
@@ -104,7 +136,8 @@ public class Book {
                 ", numPages=" + numPages +
                 ", description='" + description + '\'' +
                 ", buyerId=" + buyer.getId() + '\'' +
-                ", buyerName=" + buyer.getNameBuyer() +
+                ", buyerName=" + buyer.getNameBuyer() + '\'' +
+                ", owners=" + ownerToString(owners) +
                 '}';
     }
 }

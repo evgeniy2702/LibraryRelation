@@ -16,7 +16,7 @@ public class Buyer {
 
     @OneToMany(fetch = FetchType.LAZY,
                 mappedBy = "buyer", orphanRemoval = true)
-    private Set<Book> bookSet = new HashSet<>();
+    private Set<Book> bookSet ;
 
     public Long getId() {
         return id;

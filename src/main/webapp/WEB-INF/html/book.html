@@ -16,6 +16,7 @@
         <th>Number of pages</th>
         <th>Description of book</th>
         <th>Buyer</th>
+        <th>Owners</th>
         <th>Delete</th>
     </tr>
     <tr>
@@ -27,6 +28,11 @@
         <td th:text="${book.numPages}"></td>
         <td th:text="${book.description}"></td>
         <td th:text="${book.buyer.getNameBuyer()}"></td>
+        <td>
+            <div th:each="owner: ${book.owners}">
+                <p th:text="${owner.nameOwner}"></p>
+            </div>
+        </td>
         <td><a th:href="@{/book/delete/{id}( id= ${ book.getId() } ) }">Delete</a></td>
     </tr>
 </table>

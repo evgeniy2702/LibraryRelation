@@ -24,6 +24,7 @@
                 <th>Number of pages</th>
                 <th>Description of book</th>
                 <th>Buyer</th>
+                <th>Owners</th>
             </tr>
             <tr th:each="book: ${booksSearch}">
                 <td th:text="${book.id}">
@@ -34,6 +35,11 @@
                 <td th:text="${book.numPages}">Number of Pages</td>
                 <td th:text="${book.description}">Description</td>
                 <td th:text="${book.buyer.getNameBuyer()}">Buyer</td>
+                <td>
+                    <div th:each="owner: ${book.owners}">
+                        <p th:text="${owner.nameOwner}"></p>
+                    </div>
+                </td>
             </tr>
         </table>
     </div>
