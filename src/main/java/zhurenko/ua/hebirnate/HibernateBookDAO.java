@@ -84,9 +84,12 @@ public class HibernateBookDAO {
         List<Book> books = currentSession().createQuery("from Book", Book.class).list();
         List<Book> searchBook = new ArrayList<>();
         for (Book book: books) {
-            if (book.toString().contains(search)){
+            if (book.toString().toLowerCase().contains(search.toLowerCase())){
                 searchBook.add(book);
             }
+        }
+        for (Book book: searchBook){
+            System.out.println(book.toString());
         }
         transaction.commit();
         currentSession().close();

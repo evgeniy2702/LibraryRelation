@@ -16,7 +16,7 @@ public class Owner {
     private String nameOwner;
 
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "owners")
-    private Set<Book> bookOwnerSet;
+    private Set<Book> bookOwnerSet ;
 
     public Long getId() {
         return id;

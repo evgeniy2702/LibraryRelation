@@ -19,11 +19,6 @@
             <th>Year</th>
             <th>Stile</th>
             <th>Number of pages</th>
-            <th>Description of book</th>
-            <th>Current Buyer</th>
-            <th>Update Buyer ID</th>
-            <th>Update Buyer name</th>
-            <th>Owners</th>
         </tr>
         <tr>
             <td><input type="text"  th:field="*{name}"/></td>
@@ -31,16 +26,32 @@
             <td><input type="number" th:field="*{year}"/></td>
             <td><input type="text" th:field="*{stileOfBook}"/></td>
             <td><input type="number" th:field="*{numPages}"/></td>
+        </tr>
+        <tr>
+            <th>Description of book</th>
+            <th>Current Buyer</th>
+            <th>Update Buyer ID</th>
+            <th>Update Buyer name</th>
+            <th>Current Owners</th>
+        </tr>
+        <tr>
             <td><input type="text" th:field="*{description}"/></td>
             <td><input type="text" th:field="*{buyer.nameBuyer}" disabled/></td>
             <td><input type="text" th:field="*{buyer.id}"/></td>
             <td><input type="text" th:field="*{buyer.nameBuyer}"/></td>
-            <td>
-                <div th:each="owner: *{book.owners}">
-                    <input type="text" th:field="*{owner.id}"/>
-                    <input type="text" th:field="*{owner.nameOwner}"/>
-                </div>
+            <td >
+                <table>
+                    <tr>
+                        <td>Id Owner</td>
+                        <td>Name Owner</td>
+                    </tr>
+                    <tr th:each="owner: ${book.owners}">
+                        <td><input type="text" th:field="*{id}"/></td>
+                        <td><input type="text" th:value="*{nameOwner}"/></td>
+                    </tr>
+                </table>
             </td>
+
         </tr>
     </table>
 

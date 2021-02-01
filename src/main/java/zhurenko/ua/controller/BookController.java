@@ -4,9 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import zhurenko.ua.model.Book;
+import zhurenko.ua.model.Owner;
 import zhurenko.ua.service.BookService;
 
 import java.sql.SQLException;
+import java.util.HashSet;
 
 @Controller
 public class BookController {
@@ -32,7 +34,11 @@ public class BookController {
 
     @GetMapping("/book/new")
     public String addBook(Model model) {
-        model.addAttribute("book", new Book());
+        Book book = new Book();
+        for (int i = 0; i < 3; i++) {
+            book.addOwner(new Owner());
+        }
+        model.addAttribute("book", book);
         model.addAttribute("default", "Default value");
         return "addBook";
     }
