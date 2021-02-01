@@ -6,31 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de41d9d2-8d87-4c2f-be9c-cd329c837232" name="Default Changelist" comment="">
+    <list default="true" id="de41d9d2-8d87-4c2f-be9c-cd329c837232" name="Default Changelist" comment="add Owner and ManyToMany relation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Buyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Owner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/addBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/addBook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/searchBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/searchBook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/showBooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/showBooks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/updateBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/updateBook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/hebirnate/HibernateBookDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/hebirnate/HibernateBookDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/model/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/service/BookInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/service/BookInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/classes/zhurenko/ua/service/BookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/addBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/addBook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/searchBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/searchBook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/showBooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/showBooks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/updateBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/LibraryWeb/WEB-INF/html/updateBook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zhurenko/ua/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zhurenko/ua/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zhurenko/ua/hebirnate/HibernateBookDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zhurenko/ua/hebirnate/HibernateBookDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zhurenko/ua/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zhurenko/ua/model/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zhurenko/ua/service/BookInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zhurenko/ua/service/BookInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zhurenko/ua/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zhurenko/ua/service/BookService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,18 +42,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="1428">
               <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2018#2019#0" expanded="true" />
-                <element signature="e#2047#2048#0" expanded="true" />
-                <element signature="e#2096#2097#0" expanded="true" />
-                <element signature="e#2132#2133#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,22 +58,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Buyer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="272">
               <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#612#613#0" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
-                <element signature="e#729#730#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Owner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="374">
               <caret line="28" column="30" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -117,14 +78,6 @@
                 <element signature="e#480#481#0" expanded="true" />
                 <element signature="e#514#515#0" expanded="true" />
                 <element signature="e#542#543#0" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
-                <element signature="e#797#798#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#889#890#0" expanded="true" />
-                <element signature="e#931#932#0" expanded="true" />
-                <element signature="e#966#967#0" expanded="true" />
-                <element signature="e#1025#1026#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/addBook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+            <state relative-caret-position="255">
+              <caret line="39" column="74" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -142,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/book.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="28" column="47" lean-forward="true" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+            <state relative-caret-position="476">
+              <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -151,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/showBooks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
+            <state relative-caret-position="782">
               <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
             </state>
           </provider>
@@ -160,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/searchBook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
+            <state relative-caret-position="697">
               <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
             </state>
           </provider>
@@ -169,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/updateBook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="36" column="71" lean-forward="true" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
+            <state relative-caret-position="612">
+              <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -214,8 +167,8 @@
         <option value="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Owner.java" />
         <option value="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Buyer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/updateBook.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/addBook.html" />
         <option value="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/addBook.html" />
       </list>
     </option>
   </component>
@@ -245,6 +198,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -339,7 +293,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,12 +300,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612165313026" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612165345700" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -530,7 +483,8 @@
       <workItem from="1612034405587" duration="252000" />
       <workItem from="1612034704018" duration="236000" />
       <workItem from="1612035611393" duration="39457000" />
-      <workItem from="1612106448281" duration="21466000" />
+      <workItem from="1612106448281" duration="21747000" />
+      <workItem from="1612186374612" duration="177000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1612121423075</created>
@@ -546,11 +500,18 @@
       <option name="project" value="LOCAL" />
       <updated>1612138185309</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add Owner and ManyToMany relation">
+      <created>1612165383990</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612165383990</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84639000" />
+    <option name="totallyTimeSpent" value="85308000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -565,7 +526,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2927383" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29727685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -577,7 +538,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32843137" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.44281045" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.44281045" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39869282" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -610,7 +571,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="add Buyer and ManyToOne relation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Buyer and ManyToOne relation" />
+    <MESSAGE value="add Owner and ManyToMany relation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Owner and ManyToMany relation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ab50d33b-7af3-4928-9e48-c0f05fad4e7f/console.sql">
@@ -725,73 +687,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Buyer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="1428">
+          <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/showBooks.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Buyer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/book.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="28" column="47" lean-forward="true" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/updateBook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="36" column="71" lean-forward="true" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/searchBook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
+        <state relative-caret-position="272">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2018#2019#0" expanded="true" />
-            <element signature="e#2047#2048#0" expanded="true" />
-            <element signature="e#2096#2097#0" expanded="true" />
-            <element signature="e#2132#2133#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Owner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="374">
           <caret line="28" column="30" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -799,22 +717,42 @@
             <element signature="e#480#481#0" expanded="true" />
             <element signature="e#514#515#0" expanded="true" />
             <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/book.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/showBooks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/searchBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/updateBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/addBook.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+        <state relative-caret-position="255">
+          <caret line="39" column="74" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
         </state>
       </provider>
     </entry>
