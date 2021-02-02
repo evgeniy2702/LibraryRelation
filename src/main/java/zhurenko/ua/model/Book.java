@@ -36,7 +36,7 @@ public class Book {
     @JoinTable(name = "owner_books",
             joinColumns =  @JoinColumn(name = "book_id" , referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "owner_id", referencedColumnName = "id_owner"))
-    private Set<Owner> owners = new HashSet<>(3);
+    private Set<Owner> owners ;
 
     public Long getId() {
         return id;
@@ -110,10 +110,6 @@ public class Book {
         this.owners = owners;
     }
 
-    public void addOwner(Owner owner){
-        this.owners.add(owner);
-    }
-
     public String ownerToString(Set<Owner> owners){
         String string = "";
         for (Owner owner : owners) {
@@ -122,10 +118,8 @@ public class Book {
         return string;
     }
 
-    public void addSetOwners(Long id, String name){
-        Owner owner = new Owner();
-        owner.setId(id);
-        owner.setNameOwner(name);
+    public void addSetOwners(Owner owner){
+        this.owners = new HashSet<>();
         this.owners.add(owner);
     }
 

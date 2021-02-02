@@ -48,7 +48,6 @@
                         <td>Name Owner</td>
                     </tr>
                     <tr th:each="owner, ownerStat: *{owners}">
-                        <td th:text="${ownerStat.count}"></td>
                         <td><input type="text" th:field="*{owners[__${ownerStat.index}__].id}"/></td>
                         <td><input type="text" th:field="*{owners[__${ownerStat.index}__].nameOwner}"/></td>
                     </tr>

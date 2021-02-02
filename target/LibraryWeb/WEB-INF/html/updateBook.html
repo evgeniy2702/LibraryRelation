@@ -47,9 +47,9 @@
                         <td>Id Owner</td>
                         <td>Name Owner</td>
                     </tr>
-                    <tr th:each="owner, item: ${book.owners}">
-                        <td><input type="text" th:field="${book.owners[${item.index}].id}"/></td>
-                        <td><input type="text" th:field="${book.owners[${item.index}].nameOwner}"/></td>
+                    <tr th:each="owner, ownerStat: *{owners}">
+                        <td><input type="text" th:field="*{owners[__${ownerStat.index}__].id}"/></td>
+                        <td><input type="text" th:field="*{owners[__${ownerStat.index}__].nameOwner}"/></td>
                     </tr>
                 </table>
             </td>

@@ -36,7 +36,8 @@ public class BookController {
     public String addBook(Model model) {
         Book book = new Book();
         for (int i = 0; i < 3; i++) {
-            book.addOwner(new Owner());
+            Owner owner = new Owner();
+            book.addSetOwners(owner);
         }
         model.addAttribute("book", book);
         model.addAttribute("default", "Default value");
@@ -55,6 +56,8 @@ public class BookController {
 
     @PostMapping("/book/add")
     public String saveBook(@ModelAttribute Book book){
+        System.out.println(book.getOwners().size());
+        book.getOwners().forEach(o-> System.out.println(o.toString()));
         bookService.saveBook(book);
         return "redirect:/";
     }
