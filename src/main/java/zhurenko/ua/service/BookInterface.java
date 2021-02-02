@@ -1,8 +1,11 @@
 package zhurenko.ua.service;
 
 import zhurenko.ua.model.Book;
+import zhurenko.ua.model.Owner;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public interface BookInterface {
 
@@ -17,5 +20,7 @@ public interface BookInterface {
     List<Book> getAllBooks();
 
     List<Book> searchBook(String search);
+
+    Set<Owner> getOwners();
 
 }

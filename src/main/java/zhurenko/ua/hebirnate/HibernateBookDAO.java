@@ -6,11 +6,13 @@ import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import zhurenko.ua.model.Book;
+import zhurenko.ua.model.Owner;
 
-import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Component
@@ -77,6 +79,15 @@ public class HibernateBookDAO {
         transaction.commit();
         currentSession().close();
         return books;
+    }
+
+    public Set<Owner> getOwner(){
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        Set<Owner> owners = new HashSet<>(session.createQuery("from Owner", Owner.class).list());
+        transaction.commit();
+        session.close();
+        return owners;
     }
 
     public List<Book> searchBook(String search) {

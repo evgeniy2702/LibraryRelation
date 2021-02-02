@@ -8,6 +8,7 @@ import zhurenko.ua.model.Owner;
 import zhurenko.ua.service.BookService;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.HashSet;
 
 @Controller
@@ -35,10 +36,9 @@ public class BookController {
     @GetMapping("/book/new")
     public String addBook(Model model) {
         Book book = new Book();
-        for (int i = 0; i < 3; i++) {
-            Owner owner = new Owner();
-            book.addSetOwners(owner);
-        }
+        book.setOwners(new HashSet<>(bookService.getOwners().size()));
+        System.out.println(book.getOwners().size());
+        book.getOwners().forEach(o-> System.out.println(o.toString()));
         model.addAttribute("book", book);
         model.addAttribute("default", "Default value");
         return "addBook";
