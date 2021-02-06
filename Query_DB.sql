@@ -3,23 +3,20 @@ CREATE SCHEMA `books` ;
 USE books;
 
 CREATE TABLE `books`.`books` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+  `id` BIGINT(100) NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL DEFAULT 'Null',
   `author` VARCHAR(45) NOT NULL DEFAULT 'Null',
   `year` INT NOT NULL DEFAULT 0,
   `stile` VARCHAR(45) NOT NULL DEFAULT 'Null',
   `num_pages` INT NOT NULL DEFAULT 0,
   `description` VARCHAR(45) NOT NULL DEFAULT 'Null',
+  `buyer_id` BIGINT(100) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`));
-  
-ALTER TABLE `books`.`books`
-CHANGE COLUMN `id` `id` BIGINT(100) NOT NULL AUTO_INCREMENT ;
 
-ALTER TABLE `books`.`books`
-ADD COLUMN `buyer_id` BIGINT(100) NOT NULL AFTER `description`;
+
 
 CREATE TABLE `books`.`buyers` (
-  `buyer_id` BIGINT(100) NOT NULL,
+  `buyer_id` BIGINT(100) NOT NULL  AUTO_INCREMENT,
   `nameBuyer` VARCHAR(45) NOT NULL DEFAULT 'Null',
   PRIMARY KEY (`buyer_id`));
 
@@ -38,9 +35,6 @@ ADD CONSTRAINT `buyerKey`
   REFERENCES `books`.`buyers` (`buyer_id`)
   ON DELETE NO ACTION
   ON UPDATE NO ACTION;
-
-  ALTER TABLE `books`.`buyers`
-CHANGE COLUMN `buyer_id` `buyer_id` BIGINT(100) NOT NULL AUTO_INCREMENT ;
 
 
   CREATE TABLE `books`.`owners` (
@@ -64,9 +58,13 @@ CHANGE COLUMN `buyer_id` `buyer_id` BIGINT(100) NOT NULL AUTO_INCREMENT ;
     ON DELETE CASCADE
     ON UPDATE CASCADE);
 
-    INSERT INTO `books`.`owners` (`name`) VALUES ('Owner_1');
+INSERT INTO `books`.`owners` (`name`) VALUES ('Owner_1');
 INSERT INTO `books`.`owners` (`name`) VALUES ('Owner_2');
 INSERT INTO `books`.`owners` (`name`) VALUES ('Owner_3');
+
+INSERT INTO `books`.`buyers` (`nameBuyer`) VALUES ('Buyer_1');
+INSERT INTO `books`.`buyers` (`nameBuyer`) VALUES ('Buyer_2');
+INSERT INTO `books`.`buyers` (`nameBuyer`) VALUES ('Buyer_3');
 
 INSERT INTO `books`.`owner_books` (`book_id`, `owner_id`) VALUES ('1', '1');
 INSERT INTO `books`.`owner_books` (`book_id`, `owner_id`) VALUES ('1', '2');
@@ -74,26 +72,11 @@ INSERT INTO `books`.`owner_books` (`book_id`, `owner_id`) VALUES ('1', '3');
 INSERT INTO `books`.`owner_books` (`book_id`, `owner_id`) VALUES ('2', '2');
 INSERT INTO `books`.`owner_books` (`book_id`, `owner_id`) VALUES ('2', '3');
 INSERT INTO `books`.`owner_books` (`book_id`, `owner_id`) VALUES ('3', '3');
-INSERT INTO `books`.`owner_books` (`book_id`, `owner_id`) VALUES ('14', '2');
-INSERT INTO `books`.`owner_books` (`book_id`, `owner_id`) VALUES ('15', '1');
-INSERT INTO `books`.`owner_books` (`book_id`, `owner_id`) VALUES ('7', '3');
 
-
-INSERT INTO `books`.`books` (`name`, `author`, `year`, `stile`, `num_pages`, `description`) VALUES ('Name_1', 'Author_1', '1989', 'stile_1', '100', 'desc_1');
-INSERT INTO `books`.`books` (`name`, `author`, `year`, `stile`, `num_pages`, `description`) VALUES ('Name_2', 'Author_2', '1990', 'stile_2', '200', 'desc_2');
-INSERT INTO `books`.`books` (`name`, `author`, `year`, `stile`, `num_pages`, `description`) VALUES ('Name_3', 'Author_3', '1991', 'stile_3', '300', 'desc_3');
-INSERT INTO `books`.`books` (`name`, `author`, `year`, `stile`, `num_pages`, `description`, `buyer_id`) VALUES ('Name_9', 'Author_9', '2021', 'stile_9', '400', 'desc_9', '18');
-UPDATE `books`.`books` SET `buyer_id`='1' WHERE `id`='1';
-UPDATE `books`.`books` SET `buyer_id`='1' WHERE `id`='2';
-UPDATE `books`.`books` SET `buyer_id`='1' WHERE `id`='3';
-UPDATE `books`.`books` SET `buyer_id`='2' WHERE `id`='5';
-UPDATE `books`.`books` SET `buyer_id`='2' WHERE `id`='7';
-UPDATE `books`.`books` SET `buyer_id`='3' WHERE `id`='8';
-
-INSERT INTO `books`.`buyers` (`nameBuyer`) VALUES ('Buyer_1');
-INSERT INTO `books`.`buyers` (`nameBuyer`) VALUES ('Buyer_2');
-INSERT INTO `books`.`buyers` (`nameBuyer`) VALUES ('Buyer_3');
-
+INSERT INTO `books`.`books` (`name`, `author`, `year`, `stile`, `num_pages`, `description`, `buyer_id`) VALUES ('Name_1', 'Author_1', '1989', 'stile_1', '100', 'desc_1', '1');
+INSERT INTO `books`.`books` (`name`, `author`, `year`, `stile`, `num_pages`, `description`, `buyer_id`) VALUES ('Name_2', 'Author_2', '1990', 'stile_2', '200', 'desc_2', '2');
+INSERT INTO `books`.`books` (`name`, `author`, `year`, `stile`, `num_pages`, `description`, `buyer_id`) VALUES ('Name_3', 'Author_3', '1991', 'stile_3', '300', 'desc_3', '3');
+INSERT INTO `books`.`books` (`name`, `author`, `year`, `stile`, `num_pages`, `description`, `buyer_id`) VALUES ('Name_9', 'Author_9', '2021', 'stile_9', '400', 'desc_9', '2');
 
 SELECT * FROM books;
 

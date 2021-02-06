@@ -58,9 +58,7 @@ public class HibernateBookDAO {
 
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-
-        session.saveOrUpdate(book);
-
+        session.update(book);
         transaction.commit();
         session.close();
     }

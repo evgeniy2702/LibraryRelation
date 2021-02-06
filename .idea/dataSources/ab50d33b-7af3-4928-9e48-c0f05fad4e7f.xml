@@ -998,6 +998,7 @@
     <column id="250" parent="239" name="buyer_id">
       <Position>8</Position>
       <DataType>bigint(100)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="251" parent="239" name="buyerKey_idx">
